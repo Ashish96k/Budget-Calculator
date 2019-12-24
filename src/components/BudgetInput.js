@@ -10,8 +10,8 @@ export default function BudgetInput() {
         budget calculator
       </h2>
       <form onSubmit={handelSubmit}>
-        <div className='container form-row my-3'>
-          <div className='col'>
+        <div className='container form-row mt-3'>
+          <div className='col-12 col-md-5 col-lg-5 mb-3'>
             <input
               type='text'
               className='form-control'
@@ -22,7 +22,7 @@ export default function BudgetInput() {
               autoComplete='off'
             />
           </div>
-          <div className='col'>
+          <div className='col-12 col-md-5 col-lg-5 mb-3'>
             <input
               type='number'
               className='form-control'
@@ -33,13 +33,13 @@ export default function BudgetInput() {
               autoComplete='off'
             />
           </div>
-          <div className='col-1'>
+          <div className='col-12 col-md-2 col-lg-2 mb-2'>
             {editItem ? (
-              <button type='submit' className='btn btn-success'>
+              <button type='submit' className='btn btn-success btn-block'>
                 EDIT
               </button>
             ) : (
-              <button type='submit' className='btn btn-primary'>
+              <button type='submit' className='btn btn-primary btn-block'>
                 ADD
               </button>
             )}
